@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Pedômetro</string>
+    <string name="passos">Passos</string>
+    <string name="kilometros">Kilômetros</string>
+    <string name="metros">Metros</string>
+    <string name="calories_gastas">Calorias</string>
+    <string name="km_por_hora">Km/h</string>
+    <string name="metro_por_segundo">m/s</string>
+    <string name="passos_por_minuto">Passos/min</string>
+    <string name="compartilhar">Compartilhar</string>
+    <string name="configuraçoes">Configurações</string>
+    <string name="sair">Sair</string>
+    <string name="iniciar">Iniciar</string>
+    <string name="pausar">Pausar</string>
+    <string name="continuar">Continuar</string>
+    <string name="parar">Parar/Zerar</string>
+    <string name="sobre">Sobre</string>
+    <string name="historico">Histórico</string>
+    <string name="tempo_percorrido">Duração</string>
+</resources>

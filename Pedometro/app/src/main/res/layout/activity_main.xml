@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:keepScreenOn="true"
+    android:padding="10px"
+    android:weightSum="1"
+    android:id="@+id/linearlayout1">
+
+    <LinearLayout
+        android:id="@+id/linha_1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="10px"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/caixa_passos"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:background="@drawable/borda">
+
+            <TextView
+                android:id="@+id/tv_passos"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:hint="@string/passos"
+                android:text="0"
+                android:textColor="@android:color/background_dark"
+                android:textSize="36sp"
+                tools:textSize="36sp" />
+
+            <TextView
+                android:id="@+id/unidade_passos"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="@string/passos" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="5dp"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/box_distance"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:background="@drawable/borda">
+
+            <TextView
+                android:id="@+id/tv_distancia"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="0,00"
+                android:textColor="@android:color/background_dark"
+                android:textSize="36sp"
+                tools:textSize="36sp" />
+
+            <TextView
+                android:id="@+id/distance_units"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="@string/metros" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/row_2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/box_pace"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:background="@drawable/borda">
+
+            <Chronometer
+                android:id="@+id/chronometer"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:textColor="@android:color/background_dark"
+                android:textSize="36sp"
+                tools:textSize="36sp" />
+
+            <TextView
+                android:id="@+id/pace_units"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="@string/tempo_percorrido" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="5dp"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/box_speed"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:background="@drawable/borda">
+
+            <TextView
+                android:id="@+id/tv_velocidade"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="0,00"
+                android:textColor="@android:color/background_dark"
+                android:textSize="36sp"
+                tools:textSize="36sp" />
+
+            <TextView
+                android:id="@+id/speed_units"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="@string/metro_por_segundo" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="5dp"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/box_calories"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:background="@drawable/borda">
+
+            <TextView
+                android:id="@+id/tv_calorias"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="0,00"
+                android:textColor="@android:color/background_dark"
+                android:textSize="36sp"
+                tools:textSize="36sp" />
+
+            <TextView
+                android:id="@+id/calories_units"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="@string/calories_gastas" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/desired_pace_control"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:weightSum="1">
+
+        <Button
+            android:id="@+id/btn_start"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/iniciar" />
+
+        <Button
+            android:id="@+id/btn_pause"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/pausar"
+            android:enabled="false"/>
+
+        <Button
+            android:id="@+id/btn_stop"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/parar"
+            android:enabled="false"/>
+
+        <Button
+            android:id="@+id/btn_historico"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/historico"
+            android:enabled="true"
+            android:onClick="lista_historico" />
+
+    </LinearLayout>
+
+</LinearLayout>
